@@ -1,0 +1,11 @@
+Top Import "config.lua"
+Import "main.lua"
+
+To "Scripts/TraitData.lua"
+Import "Data/TraitData.lua"
+
+To "Scripts/GiftData.lua"
+Import "Data/GiftData.lua"
+
+To "Game/Text/en/HelpText.en.sjson"
+SJSON "Game/Text/HelpText.en.sjson"

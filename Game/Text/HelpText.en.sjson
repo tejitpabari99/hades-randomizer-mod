@@ -1,0 +1,19 @@
+{
+  Texts = [
+    "_append"
+    {
+      Id = "SampleKeepsakeTrait"
+      DisplayName = "Old Feather"
+      Description = "Restores {#AltUpgradeFormat}{$TooltipData.TooltipHeal}{!Icons.HealthUp_Small}{#PreviousFormat} health when you exit a chamber."
+    }
+    {
+      Id = "SampleKeepsakeTrait_Rack"
+      InheritFrom = "SampleKeepsakeTrait"
+      Description = "Restores {#AltUpgradeFormat}{$TooltipData.TooltipHeal}{!Icons.HealthUp_Small}{#PreviousFormat} health when you exit a chamber. \n\n\n {#AwardFlavorFormat}{$TooltipData.SignoffText}"
+    }
+    {
+      Id = "SampleKeepsakeSignoff"
+      DisplayName = "From your bed"
+    }
+  ]
+}
