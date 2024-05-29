@@ -14,6 +14,11 @@ function dump(o)
  end
 
 
+function RandomWeapon()
+   weapon_options = {WeaponData.SwordWeapon, WeaponData.ShieldWeapon, WeaponData.FistWeapon, WeaponData.BowWeapon, WeaponData.SpearWeapon, WeaponData.GunWeapon}
+   pick_weapon = weapon_options[math.random(1, #weapon_options)]
+   return pick_weapon
+end
 
 OnUsed{ "ExitDoors", function (triggerArgs)
     
@@ -23,6 +28,8 @@ OnUsed{ "ExitDoors", function (triggerArgs)
     GameState.LastAwardTrait = new_trait
     EquipKeepsake( CurrentRun.Hero, GameState.LastAwardTrait )
     DebugPrint({Text=GameState.LastAwardTrait})
+    DebugPrint({Text=GetEquippedWeapon()})
+    EquipPlayerWeapon(RandomWeapon())
 
 end}
 
